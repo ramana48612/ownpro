@@ -1,0 +1,26 @@
+
+create table users(id_no int(16) primary key auto_increment,name text not null,phone text not null,gender enum("m","f","o"),dob date,email varchar(50) not null,password varchar(20) not null)auto_increment=10000;
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+create table bus_list(bus_name text, start text, end text , time text , price int);
+
+
+mysql> insert into bus_list values("tnstc","tenkasi","chennai","08:00-am",300);
+
+
+mysql> insert into bus_list values("cheran travels","tenkasi","coimbatore","06:30-am",280);
+
+
+mysql> insert into bus_list values("kpn travels","chennai","bangalore","10:00-am",200);
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+create table "busname"(seat_no int , name text not null , age tinyint , gender enum('M','F','O'),phone text(10) , email text , date date);
+
+				*this for each busname
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+*we need to import some jar files to send mail and connect to mysql. (3 files).
+files are given in the folder(jar files)
